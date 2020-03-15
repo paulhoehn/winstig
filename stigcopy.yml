@@ -1,7 +1,7 @@
 - name: test cmd from win_command module
-  hosts: server
+  hosts: all
   tasks:
-    - name: run netstat and return Ethernet stats 
+    - name: run win copy
       win_copy:
-       src: /etc/ansible/files/lgpo
+       src: /lgpo
        dest: C:\
