@@ -3,5 +3,5 @@
   tasks:
     - name: run win copy
       win_copy:
-       src: /lgpo
+       src: /home/hoehnp/lgpo
        dest: C:\
