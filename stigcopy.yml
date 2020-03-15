@@ -3,5 +3,5 @@
   tasks:
     - name: run win copy
       win_copy:
-       src: /etc/ansible/files/lgpo
+       remote_src: /etc/ansible/files/lgpo
        dest: C:\
