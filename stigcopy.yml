@@ -4,4 +4,4 @@
     - name: run win copy
       win_copy:
        src: files/lgpo/
-       dest: C:\
+       dest: C:\lgpo\
