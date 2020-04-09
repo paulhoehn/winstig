@@ -3,5 +3,5 @@
   tasks:
     - name: run win copy
       win_copy:
-       src: files/lgpo/
+       src: files/junk.txt
        dest: C:\lgpo\
