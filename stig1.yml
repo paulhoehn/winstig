@@ -2,6 +2,6 @@
   hosts: server
   tasks:
     - name: run netstat and return Ethernet stats 
-      win_command: c:\lgpo\lgpo.exe /g c:\lgpo\{CAE4C09E-4583-4903-BF42-3A85AD4C4370}
+      win_command: c:\lgpo\lgpo.exe /g c:\lgpo\
       register: lgpo
     - debug: var=lgpo
