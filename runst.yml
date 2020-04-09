@@ -1,6 +1,5 @@
 - name: test cmd from win_command module
   hosts: all
-  remote_user: john
   tasks:
     - name: run win copy
       win_copy:
