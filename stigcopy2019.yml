@@ -1,0 +1,30 @@
+- name: test cmd from win_command module
+  hosts: all
+  tasks:
+    - name: copy files to windows server 1
+      win_copy:
+       src: files/lgpo2019
+       dest: C:\
+
+    - name: copy files admx1
+      win_copy:
+       src: files/policies2019/MSS-legacy.admx
+       dest: C:\windows\PolicyDefinitions\
+
+
+    - name: copy files admx2
+      win_copy:
+       src: files/policies2019/SecGuide.admx
+       dest: C:\windows\PolicyDefinitions\
+
+
+    - name: copy files adml1
+      win_copy:
+       src: files/policies2019/SecGuide.adml
+       dest: C:\windows\PolicyDefinitions\en-US\
+
+  
+    - name: copy files adml2
+      win_copy:
+       src: files/policies2019/MSS-legacy.adml
+       dest: C:\windows\PolicyDefinitions\en-US\
