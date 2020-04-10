@@ -1,6 +1,6 @@
 - name: test cmd from win_command module
   hosts: all
-  remote_user: john
+  remote_user: ansible
   tasks:
     - name: run win copy
       win_copy:
