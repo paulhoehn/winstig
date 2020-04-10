@@ -2,6 +2,6 @@
   hosts: all
   tasks:
     - name: run stig command 
-      win_command: c:\lgpo2016\lgpo.exe /g c:\lgpo2016\part4\
+      win_command: c:\lgpo2016\lgpo.exe /g c:\lgpo2016\part5\
       register: lgpo
     - debug: var=lgpo
