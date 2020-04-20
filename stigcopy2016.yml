@@ -3,7 +3,7 @@
   tasks:
     - name: copy files to windows server 1
       win_copy:
-       src: files/lgpo2016
+       src: files/lgpo
        dest: C:\
 
     - name: copy files admx1
