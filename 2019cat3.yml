@@ -1,7 +1,0 @@
-- name: test cmd from win_command module Part2
-  hosts: all
-  tasks:
-    - name: run stig command 
-      win_command: c:\lgpo2019\lgpo.exe /g c:\lgpo2019\cat3\
-      register: lgpo
-    - debug: var=lgpo
