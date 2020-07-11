@@ -1,0 +1,69 @@
+Step 0 – Prepping RHEL 7
+If you have just downloaded the RHEL 7 ISO as part of the developer subscription model we will need to perform some initial tasks to get it up to scratch
+
+Authenticate your subscription
+subscription-manager register --username your_username --password your_password
+
+Update the OS
+yum update && yum upgrade
+
+Let’s install some classics such as ifconfig & wget Shell
+yum install net-tools
+
+yum install wget
+
+yum install net-tools
+
+yum install wget
+
+We also need access to the “Extra Packages for Enterprise Linux” for downloading packages outside the normal channels
+
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+rpm -ivh epel-release-latest-7.noarch.rpm
+yum install epel-release
+
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+rpm -ivh epel-release-latest-7.noarch.rpm
+
+yum install epel-release
+
+
+So at this point we should have a RHEL 7 instance ready to go.
+
+Step 1 – Installing Python, Python Tooling & Ansible
+We’ll install Python first
+
+sudo yum install python
+
+Next we’ll install PIP which is a “package management system used to install and manage software packages written in Python”
+
+sudo yum install python-pip
+
+Now we need to upgrade it
+
+sudo pip install --upgrade pip
+Next we’ll use PIP to install some liraries and modules for python & Ansible
+
+sudo pip install markupsafe
+sudo pip install xmltodict
+sudo pip install pywinrm
+
+And finally we will install Ansible
+sudo yum install ansible
+
+To confirm that it has been installed correctly we’ll execute
+ansible --version
+
+Which should generate the following output
+[asecor@labansc]$ ansible --version
+ansible 2.1.2.0
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = Default w/o overrides
+
+[asecor@labansc]$ ansible --version
+ansible 2.1.2.0
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = Default w/o overrides
+
+Done! We now have a working Ansible installation on Red Hat Linux 7!

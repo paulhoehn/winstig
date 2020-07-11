@@ -1,0 +1,30 @@
+Install Python and PIP on the Ansible server
+yum -y install python-pip
+yum -y install "pywinrm>=Curent version"
+
+Ansible test to windows
+ansible server -i hosts -m win_ping (this hosts file in in /etc/ansible/   it is not the system host file. run rom this folder)
+
+Ansible command to run a playbook 
+ansible-playbook site4.yml
+
+Example of a windows command playbook
+- name: test cmd from win_command module
+  hosts: server
+  tasks:
+    - name: run netstat and return Ethernet stats
+      win_command: netstat -e
+      register: netstat
+    - debug: var=netstat
+
+Ansible single line command example to sun the setup command on remote windows system.
+ansible server -i hosts -m setup
+
+
+Update hosts file with ip address and host name of each server if DNS is not working
+vi /etc/hosts
+
+
+Unremarkable commands
+ ansible all -m setup --tree /tmp/facts
+

@@ -1,0 +1,45 @@
+hosts file example
+  
+[all:vars]
+ansible_connection: winrm
+ansible_ssh_user: administrator
+ansible_ssh_pass: Dfkdsd12!
+
+[servers]
+dc2016-2.lab2.local
+
+
+
+Playbook example for patching
+- name: test cmd
+  hosts: server
+  tasks:
+    - name: test cmd
+      win_updates:
+        category_names:
+          - SecurityUpdates
+      Register: update_result
+
+
+Other patching catagorys
+
+ category_names:
+              – Application
+              – Connectors
+              – DefinitionUpdates
+              – DeveloperKits
+              – FeaturePacks
+              – Guidance
+              – ServicePacks
+              – Tools
+              – UpdateRollups
+              – CriticalUpdates
+              – SecurityUpdates
+          register: update_result
+
+Playbook Reboot tag
+
+        – name: Reboot, if needed.
+          win_reboot:
+          when: update_result.reboot_required
+      when: update_count.found_update_count|int >= 1

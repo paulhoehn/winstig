@@ -1,0 +1,94 @@
+
+In Windows:
+  Creat Ansible account
+  Give ansible user administrator rights
+  Run Windows PowerShell for Ansible script
+
+  Run from administrator CMD prompt
+   winrm configSDDL default
+  The Permissions for Default opens
+
+  Add user Windows Ansible account name and make sure the name is high lighted
+  Select the following permissions for the Windows Ansible user
+   Read
+   Write
+   Execute
+  Select OK
+
+
+
+Ansible Tower Configuration
+In Tower
+ In Ansible tower add the following variables where needed.
+   ---
+   ansible_port: 5986
+   ansible_connection: winrm
+   ansible_winrm_server_cert_validation: ignore
+ 
+Copy required STIG files using the Ansible playbook corosponding the the windows version.
+
+Apply Cat-1 STIGs only to the server.
+After Cat-1 STIG's are applied
+
+Reboot server	
+After this reboot use only the inventory you configured with the settings listed below.
+
+Make sure all these user and password are changed as needed in all locations required, inventory, groups.
+---
+
+ansible_user: ansible
+ansible_password: theuserpassword
+ansible_connection: winrm
+ansible_winrm_transport: ntlm
+
+
+
+*********************************************************************
+
+
+Added into policy on Cat-1
+
+gpedit.msc
+Computer Configuration
+ Windows Settings
+  Security Settings
+   Local Policies
+    Security Options
+Network Security: Minimum session security for NTLM based (including secure RPC) clients      Require 128-bit encry 
+Network Security: Minimum session security for NTLM based (including secure RPC) servers      Require 128-bit encry
+
+ Update Ansible Towers IP address / address's after Cat-2 STIG's applied
+Network Security: Restrict NTLM: Add remote server exceptions for NTLM authentication         Tower IP
+Network Security: Restrict NTLM: Add server exceptions in this domain                         Tower IP
+
+Network Security: Restrict NTLM: Audit Incoming NTLM Traffic                                  Not Defined
+Network Security: Restrict NTLM: Audit NTLM authentication in this domain                     Not Defined
+Network Security: Restrict NTLM: Incoming NTLM traffic                                        Allow all
+Network Security: Restrict NTLM: NTLM authentication in the domain                            Not Defined
+Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers                      Allow all
+
+Computer Configuration
+ MSSecurity Guide
+  Apply UAC restrictions to local accounts on network logins to  Disabled
+
+Exit GPEDIT.MSC
+
+Run from administrator CMD prompt
+gpupdate /force
+
+
+
+notes
+
+Configure the following registry value:
+v-73495
+Registry Hive: HKEY_LOCAL_MACHINE
+Subkey: SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+Value Name: LocalAccountTokenFilterPolicy
+Type: REG_DWORD
+Value: 1   (Must be set to 1)
+
+From Admin Power Shell
+New-ItemProperty -Name LocalAccountTokenFilterPolicy `
+  -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System `
+  -PropertyType DWord -Value 1

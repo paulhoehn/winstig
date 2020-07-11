@@ -1,0 +1,20 @@
+All are powershell commands to run on a new windows host.
+
+Run on each windows server. Does not need to be run on 2016 or newer.
+upgradeps_net.ps1
+
+upgrade just PS
+upgrade_ps.ps1
+
+Run on each windows server. Might have to run it 2 times to get it to work.
+Configure_widows_host.ps1
+
+Testing windows for proper configuration 
+
+Listener testing
+winrm enumerate winrm/config/listener
+
+Windows command testing
+winrs -r:http://servername:5985/wsman -u:administrator -p:password ipconfig
+
+

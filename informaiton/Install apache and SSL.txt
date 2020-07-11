@@ -1,0 +1,31 @@
+Install Apache web server and SSL
+Install web server
+
+sudo yum install httpd
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo firewall-cmd --permanent --zone=public --add-service=http
+sudo firewall-cmd --permanent --zone=public --add-service=https
+sudo firewall-cmd –reload
+
+
+Install and configure SSL
+sudo yum install mod_ssl openssl
+Copy Certificate, Key and chain certs to /etc/httpd/certs
+Edit /etc/httpd/conf.d/ssl.conf and add the certificates and the paths to the file. Where indicated.
+
+Restart the httpd service.
+sudo systemctl reload httpd
+
+To stop the Apache service, run:
+sudo systemctl stop httpd
+To start it again, type:
+sudo systemctl start httpd
+To restart the Apache service:
+sudo systemctl restart httpd
+To reload the Apache service after you made some configuration changes:
+sudo systemctl reload httpd
+If you want to disable the Apache service to start at boot:
+sudo systemctl disable httpd
+And to re-enable it again:
+sudo systemctl enable httpd
