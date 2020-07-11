@@ -1,0 +1,3 @@
+ezoicSiteSpeed(jQuery(document), String(/documentReady/).substring(1).slice(0,-1), String(/jQuery-document-dot-ready/).substring(1).slice(0,-1), function($) {
+	
+});

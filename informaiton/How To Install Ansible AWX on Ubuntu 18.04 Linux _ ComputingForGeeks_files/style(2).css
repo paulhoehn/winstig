@@ -1,0 +1,173 @@
+/*
+Theme Name:     Newspaper Child theme
+Theme URI: 		http://themeforest.net/user/tagDiv/portfolio
+Description:    Child theme made by tagDiv
+Author:         tagDiv
+Author URI: 	http://themeforest.net/user/tagDiv/portfolio
+Template:       Newspaper
+Version:        9.0c
+*/
+
+
+/*  ----------------------------------------------------------------------------
+    This file will load automatically when the child theme is active. You can use it
+    for custom CSS.
+*/
+
+
+
+/*
+Banner CSS
+*/
+.pw-outer {
+ 
+background-image:
+linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+url(https://computingforgeeks.com/wp-content/uploads/2020/02/pr_b_img.jpg);
+ 
+width: 100%;
+min-height: 300px;
+height:auto;
+background-size: cover;
+}
+.pw-title{
+    color: #3c3c3b !important;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 15px 0;
+    color: #0c0b0c;
+    font-weight: bold;
+    font-family: cursive;
+}
+.pw-left{
+    width:70%;
+    float:left;
+    padding-left:22px;
+    color:#fff;
+}
+.pw-right{
+    position: absolute;
+    right: 0;
+    width:52%;
+}
+.fa-arrow-right{
+    color:#fff;
+}
+.pw-btn{
+    font-weight: bold;
+    font-family: sans-serif;
+    width:160px !important;
+    text-align: center;
+    background: #fff;
+    padding: 1;
+    border-radius: 16px;
+    padding: 6px 9px;
+    display:block; width:100px; margin:0 auto;
+    bottom:0 !important;
+    margin-bottom: 16px;
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+.textwidget{
+    position:relative;
+}
+
+
+
+.after-post-box {
+    background-color: #137aa9;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 5px dashed #fff;
+    color: #000;
+}
+.after-post-box h2 {
+color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 10px 20px 10px;
+}
+.after-post-box p {
+    line-height: 32px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+.after-post-box img{
+    
+    max-width: 100%;
+    height: auto;
+    margin:0 auto;
+
+}
+.after-post-box strong {
+    font-weight: 400;
+    font-size: 15px !important;
+    color: #fff;
+}
+
+/*Fix Header start*/
+
+#container {
+    /*border: 0px solid;*/
+    max-width: 80%;
+    margin:0px auto;
+    display: block;
+    overflow-x: hidden;
+}
+#fixed_header {
+    /*top: 0px;*/
+    /*position: fixed;*/
+      
+     background-color: #ff4e00;
+background-image:linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+
+    position:fixed;
+    top:0px;
+    min-height:35px;
+    height:auto;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    
+}
+.fixed_header_title{
+    color:#fff;
+    font-family:  "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-size:17px;
+}
+.fixed_header_button{
+    color:#fff;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-left:15px;
+    padding:14px;
+    background:red;
+    font-size:16px;
+}
+#fixed_header_content {
+    width: 100%;
+    overflow-x: hidden;
+    clear: both;
+    /*border: 1px solid;*/
+    margin:6px auto;
+    
+}
+.tdc-header-wrap {
+    margin-top:35px !important;
+}
+#fixed_header_title,#fixed_header_button_link{
+    width:40% !important;
+}
+/*fix header end*/

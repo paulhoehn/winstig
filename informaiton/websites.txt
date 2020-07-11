@@ -1,0 +1,4 @@
+https://www.ansible.com/blog/windows-updates-and-ansible
+
+https://4sysops.com/archives/automate-windows-updates-with-ansible/
+

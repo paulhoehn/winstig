@@ -1,0 +1,36 @@
+yum update
+yum install python2-devel
+yum install gcc
+yum install python-virtualenv
+virtualenv venv
+source venv/bin/activate
+# This works correctly
+pip install subprocess32
+# Need latest pip for manylinux wheels
+python -m pip install --upgrade pip
+# This works correctly
+pip install matplotlib
+
+
+
+
+76
+
+On Ubuntu 16.04
+
+Here's how I fixed this issue: Refer Docker Compose documentation
+
+sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+After you do the curl command , it'll put docker-compose into the
+
+/usr/local/bin
+
+which is not on the PATH. To fix it, create a symbolic link:
+
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+And now if you do: docker-compose --version
+
+You'll see that docker-compose is now on the PATH

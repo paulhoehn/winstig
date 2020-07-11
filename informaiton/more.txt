@@ -1,0 +1,25 @@
+
+  
+[all:vars]
+ansible_connection: winrm
+ansible_ssh_user: administrator
+ansible_ssh_pass: Dfkdsd12!
+
+[servers]
+dc2016-2.lab2.local
+
+
+
+---
+- name: Run Updates on Terminal Servers then wait 7 mins
+  hosts: servers
+  connection: winrm
+
+  tasks:
+    win_updates:
+      category_names:
+        - SecurityUpdates
+      blacklist:
+        - Windows Malicious Software Removal Tool for Windows
+    reboot: yes
+    reboot_timeout: 900

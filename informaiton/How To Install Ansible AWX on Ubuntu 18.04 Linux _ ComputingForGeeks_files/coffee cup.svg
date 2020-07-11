@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="483px" height="713px" viewBox="0 0 483 713" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="178.202 1.091 387.534 0.014 300.312 554.123 87.809 554.123 0.587 0.014"></polygon>
+        <polygon id="path-3" points="178.202 1.091 343.129 0.014 255.908 554.123 87.809 554.123 0.587 0.014"></polygon>
+        <polygon id="path-5" points="317.341 0.879 350.644 77.528 0.173 77.528 33.476 0.879"></polygon>
+        <polygon id="path-7" points="433.876 0.507 394.792 220.873 217.409 218.951 40.026 220.873 0.942 0.507"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <g id="Group-9" transform="translate(62.051000, 146.016000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <polygon id="Fill-7" fill="#EA882D" mask="url(#mask-2)" points="0.58 554.24 387.58 554.24 387.58 -0.04 0.58 -0.04"></polygon>
+            </g>
+            <g id="Group-12" transform="translate(62.051000, 146.016000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-11"></g>
+                <polygon id="Fill-10" fill="#FBDA1D" mask="url(#mask-4)" points="0.58 554.24 343.18 554.24 343.18 -0.04 0.58 -0.04"></polygon>
+            </g>
+            <polygon id="Fill-13" fill="#FFFFFE" points="11.892 146.03 470.199 146.03 470.199 94.931 11.892 94.931"></polygon>
+            <path d="M23.784,134.14 L458.308,134.14 L458.308,106.827 L23.784,106.827 L23.784,134.14 Z M2.84217094e-14,157.924 L482.093,157.924 L482.093,83.042 L2.84217094e-14,83.042 L2.84217094e-14,157.924 Z" id="Fill-15" fill="#0A0B09"></path>
+            <g id="Group-18" transform="translate(64.051000, 11.016000)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-17"></g>
+                <polygon id="Fill-16" fill="#FFFFFE" mask="url(#mask-6)" points="0.14 77.6 350.66 77.6 350.66 0.8 0.14 0.8"></polygon>
+            </g>
+            <path d="M82.359,76.652 L396.561,76.652 L373.594,23.785 L105.325,23.785 L82.359,76.652 Z M432.834,100.436 L46.085,100.436 L89.728,0 L389.192,0 L432.834,100.436 L432.834,100.436 Z" id="Fill-19" fill="#0C0D0B"></path>
+            <path d="M128.309,688.247 L352.197,688.247 L435.658,157.999 L240.192,159 L44.848,157.999 L128.309,688.247 Z M372.529,712.032 L107.978,712.032 L16.997,134.064 L240.25,135.215 L463.509,134.064 L372.529,712.032 L372.529,712.032 Z" id="Fill-20" fill="#0A0B09"></path>
+            <g id="Group-23" transform="translate(22.051000, 302.016000)">
+                <mask id="mask-8" fill="white">
+                    <use xlink:href="#path-7"></use>
+                </mask>
+                <g id="Clip-22"></g>
+                <polygon id="Fill-21" fill="#FFFFFE" mask="url(#mask-8)" points="0.86 220.88 433.94 220.88 433.94 0.44 0.86 0.44"></polygon>
+            </g>
+            <path d="M239.33,509.078 L406.893,510.89 L441.737,314.417 L37.183,314.417 L72.027,510.89 L239.33,509.078 Z M426.794,534.89 L239.33,532.862 L52.125,534.89 L8.805,290.633 L470.114,290.633 L426.794,534.89 L426.794,534.89 Z" id="Fill-24" fill="#0A0B09"></path>
+        </g>
+    </g>
+</svg>

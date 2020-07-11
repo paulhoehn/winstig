@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2020-03-18_175437,HostName:EC2AMAZ-ORHR0DF,FileType:OVAL CPE Results,StreamName:Windows_Server_2019_STIG-001.002,ErrorCount:0,WarnCount:0 -->
+
+<oval-res:oval_results xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-results-5 https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/oval-results-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/windows-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/solaris-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#hpux https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/hpux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/macos-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5 https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/oval-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/independent-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/windows-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/linux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#solaris https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/solaris-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#hpux https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/hpux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#macos https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/macos-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix https://raw.githubusercontent.com/OVALProject/Language/5.11.2/schemas/unix-system-characteristics-schema.xsd" xmlns:oval-res="http://oval.mitre.org/XMLSchema/oval-results-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5" xmlns:ind-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:win-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" xmlns:linux-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux">
+      <oval-res:generator>
+            <oval:product_name>SCAP Compliance Checker</oval:product_name>
+            <oval:product_version>5.2</oval:product_version>
+            <oval:schema_version>5.11.2</oval:schema_version>
+            <oval:timestamp>2020-03-18T17:54:41</oval:timestamp>
+      </oval-res:generator>
+      <oval-res:directives>
+            <oval-res:definition_true content="full" reported="true"></oval-res:definition_true>
+            <oval-res:definition_false content="full" reported="true"></oval-res:definition_false>
+            <oval-res:definition_unknown content="full" reported="true"></oval-res:definition_unknown>
+            <oval-res:definition_error content="full" reported="true"></oval-res:definition_error>
+            <oval-res:definition_not_evaluated content="full" reported="true"></oval-res:definition_not_evaluated>
+            <oval-res:definition_not_applicable content="full" reported="true"></oval-res:definition_not_applicable>
+      </oval-res:directives>
+      <oval-def:oval_definitions>
+            <oval-def:generator>
+                  <oval:product_name>repotool</oval:product_name>
+                  <oval:schema_version>5.10</oval:schema_version>
+                  <oval:timestamp>2020-01-06T16:48:32</oval:timestamp>
+            </oval-def:generator>
+            <oval-def:definitions>
+                  <oval-def:definition version="2" class="inventory" id="oval:mil.disa.stig.windows:def:2001">
+                        <oval-def:metadata>
+                              <oval-def:title>Microsoft Windows Server 2019</oval-def:title>
+                              <oval-def:affected family="windows">
+                                    <oval-def:platform>Microsoft Windows Server 2019</oval-def:platform>
+                              </oval-def:affected>
+                              <oval-def:reference ref_id="cpe:/o:microsoft:windows_server_2019:-" source="CPE"></oval-def:reference>
+                              <oval-def:description>Microsoft Windows Server 2019 is the installed operating system</oval-def:description>
+                        </oval-def:metadata>
+                        <oval-def:criteria applicability_check="false">
+                              <oval-def:criterion applicability_check="false" comment="The installed operating system is Microsoft Windows Server 2019" test_ref="oval:mil.disa.stig.windows:tst:200100"></oval-def:criterion>
+                              <oval-def:criterion applicability_check="false" comment="The installed operating system belongs to the Microsoft Windows family" test_ref="oval:mil.disa.stig.windows:tst:200101"></oval-def:criterion>
+                        </oval-def:criteria>
+                  </oval-def:definition>
+            </oval-def:definitions>
+            <oval-def:tests>
+                  <win-def:registry_test check="at least one" check_existence="at_least_one_exists" version="2" comment="Is this system running Windows Server 2019?" state_operator="AND" id="oval:mil.disa.stig.windows:tst:200100">
+                        <win-def:object object_ref="oval:mil.disa.stig.windows:obj:200100"></win-def:object>
+                        <win-def:state state_ref="oval:mil.disa.stig.windows:ste:200100"></win-def:state>
+                  </win-def:registry_test>
+                  <ind-def:family_test check="only one" check_existence="at_least_one_exists" version="1" comment="The installed operating system is part of the Microsoft Windows family" state_operator="AND" id="oval:mil.disa.stig.windows:tst:200101">
+                        <ind-def:object object_ref="oval:mil.disa.stig.windows:obj:200102"></ind-def:object>
+                        <ind-def:state state_ref="oval:mil.disa.stig.windows:ste:200101"></ind-def:state>
+                  </ind-def:family_test>
+            </oval-def:tests>
+            <oval-def:objects>
+                  <win-def:registry_object version="2" comment="Windows version" id="oval:mil.disa.stig.windows:obj:200100">
+                        <win-def:hive>HKEY_LOCAL_MACHINE</win-def:hive>
+                        <win-def:key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</win-def:key>
+                        <win-def:name>ProductName</win-def:name>
+                  </win-def:registry_object>
+                  <ind-def:family_object version="1" comment="Family" id="oval:mil.disa.stig.windows:obj:200102"></ind-def:family_object>
+            </oval-def:objects>
+            <oval-def:states>
+                  <win-def:registry_state version="3" id="oval:mil.disa.stig.windows:ste:200100">
+                        <win-def:value operation="pattern match">[Ww][Ii][Nn][Dd][Oo][Ww][Ss]\s+[Ss][Ee][Rr][Vv][Ee][Rr]\s+2019</win-def:value>
+                  </win-def:registry_state>
+                  <ind-def:family_state version="1" comment="Microsoft Windows family" id="oval:mil.disa.stig.windows:ste:200101">
+                        <ind-def:family>windows</ind-def:family>
+                  </ind-def:family_state>
+            </oval-def:states>
+      </oval-def:oval_definitions>
+      <oval-res:results>
+            <oval-res:system>
+                  <oval-res:definitions>
+                        <oval-res:definition version="2" definition_id="oval:mil.disa.stig.windows:def:2001" result="true">
+                              <oval-res:criteria applicability_check="false" operator="AND" result="true">
+                                    <oval-res:criterion version="2" applicability_check="false" result="true" test_ref="oval:mil.disa.stig.windows:tst:200100"></oval-res:criterion>
+                                    <oval-res:criterion version="1" applicability_check="false" result="true" test_ref="oval:mil.disa.stig.windows:tst:200101"></oval-res:criterion>
+                              </oval-res:criteria>
+                        </oval-res:definition>
+                  </oval-res:definitions>
+                  <oval-res:tests>
+                        <oval-res:test check="at least one" check_existence="at_least_one_exists" version="2" test_id="oval:mil.disa.stig.windows:tst:200100" state_operator="AND" result="true">
+                              <oval-res:tested_item item_id="1" result="true"></oval-res:tested_item>
+                        </oval-res:test>
+                        <oval-res:test check="only one" check_existence="at_least_one_exists" version="1" test_id="oval:mil.disa.stig.windows:tst:200101" state_operator="AND" result="true">
+                              <oval-res:tested_item item_id="2" result="true"></oval-res:tested_item>
+                        </oval-res:test>
+                  </oval-res:tests>
+                  <oval-sc:oval_system_characteristics>
+                        <oval-sc:generator>
+                              <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                              <oval:product_version>5.2</oval:product_version>
+                              <oval:schema_version>5.11.2</oval:schema_version>
+                              <oval:timestamp>2020-03-18T17:54:41</oval:timestamp>
+                        </oval-sc:generator>
+                        <oval-sc:system_info>
+                              <oval-sc:os_name>Windows Server 2019 Datacenter</oval-sc:os_name>
+                              <oval-sc:os_version>Windows Server 2019 Datacenter</oval-sc:os_version>
+                              <oval-sc:architecture>Intel64 Family 6 Model 63 Stepping 2</oval-sc:architecture>
+                              <oval-sc:primary_host_name>EC2AMAZ-ORHR0DF</oval-sc:primary_host_name>
+                              <oval-sc:interfaces>
+                                    <oval-sc:interface>
+                                          <oval-sc:interface_name>[00000001] AWS PV Network Device</oval-sc:interface_name>
+                                          <oval-sc:ip_address>172.20.205.103</oval-sc:ip_address>
+                                          <oval-sc:mac_address>02:E7:73:CC:A7:58</oval-sc:mac_address>
+                                    </oval-sc:interface>
+                              </oval-sc:interfaces>
+                              <__NS1:asset-identification xmlns:__NS1="http://scap.nist.gov/schema/scap/constructs/1.2">
+                                    <__NS2:object-ref ref-id="SCC_EC2AMAZ-ORHR0DF" xmlns:__NS2="http://scap.nist.gov/schema/asset-reporting-format/1.1" />
+                              </__NS1:asset-identification>
+                        </oval-sc:system_info>
+                        <oval-sc:collected_objects>
+                              <oval-sc:object version="2" id="oval:mil.disa.stig.windows:obj:200100" flag="complete">
+                                    <oval-sc:reference item_ref="1"></oval-sc:reference>
+                              </oval-sc:object>
+                              <oval-sc:object version="1" id="oval:mil.disa.stig.windows:obj:200102" flag="complete">
+                                    <oval-sc:reference item_ref="2"></oval-sc:reference>
+                              </oval-sc:object>
+                        </oval-sc:collected_objects>
+                        <oval-sc:system_data>
+                              <win-sc:registry_item id="1" status="exists">
+                                    <win-sc:hive>HKEY_LOCAL_MACHINE</win-sc:hive>
+                                    <win-sc:key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</win-sc:key>
+                                    <win-sc:name>ProductName</win-sc:name>
+                                    <win-sc:last_write_time datatype="int">132290074340000000</win-sc:last_write_time>
+                                    <win-sc:type>reg_sz</win-sc:type>
+                                    <win-sc:value>Windows Server 2019 Datacenter</win-sc:value>
+                                    <win-sc:windows_view>64_bit</win-sc:windows_view>
+                              </win-sc:registry_item>
+                              <ind-sc:family_item id="2" status="exists">
+                                    <ind-sc:family>windows</ind-sc:family>
+                              </ind-sc:family_item>
+                        </oval-sc:system_data>
+                  </oval-sc:oval_system_characteristics>
+            </oval-res:system>
+      </oval-res:results>
+</oval-res:oval_results>

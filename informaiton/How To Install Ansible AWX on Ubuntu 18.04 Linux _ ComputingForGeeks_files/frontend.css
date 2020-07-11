@@ -1,0 +1,25 @@
+.c4gpdf-button-container {
+	width:100%;
+	float:left;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+a.c4gpdf-button {
+	display: inline-block;
+}
+
+a.c4gpdf-button:link, a.c4gpdf-button:visited {
+
+}
+
+a.c4gpdf-button:hover {
+
+}
+
+a.c4gpdf-button span.c4gpdf-button-icon {
+	font-size:140%;
+	margin-right:5px;
+}
+
+.c4gpdf-content {}
