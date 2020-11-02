@@ -9,7 +9,5 @@ read username &&
 echo "Enter the SSH public key:" &&
 read key &&
 az group create --name $resourceGroupName --location "$location" &&
-az deployment group create --resource-group $resourceGroupName --template-uri https://github.com/paulhoehn/winstig/master/azurelinuxtemplate.json --parameters projectName=$projectName adminUsername=$username adminPublicKey="$key" &&
+az deployment group create --resource-group $resourceGroupName --template-uri https://github.com/paulhoehn/winstig/blob/master/azurelinuxtemplate.json --parameters projectName=$projectName adminUsername=$username adminPublicKey="$key" &&
 az vm show --resource-group $resourceGroupName --name "$projectName-vm" --show-details --query publicIps --output tsv
-
-https://github.com/paulhoehn/winstig/master/azurelinuxtemplate.json
